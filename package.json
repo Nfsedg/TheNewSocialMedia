@@ -1,0 +1,23 @@
+{
+  "name": "socialnetwork",
+  "version": "1.0.0",
+  "workspaces": [
+    "app",
+    "api"
+  ],
+  "description": "my new socialnetwork proyect",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build --workspace=app",
+    "start": "npm run start --workspace=api",
+    "dev:app": "npm run start --workspace=app",
+    "dev:api": "npm run build && npm run dev --workspace=api"
+  },
+  "engines": {
+    "npm": "8.5.1"
+  },
+  "keywords": [],
+  "author": "Edgar Pech <edgaropech@hotmail.com>",
+  "license": "MIT",
+  "proxy": "http://localhost:3005"
+}
